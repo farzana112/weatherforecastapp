@@ -29,8 +29,7 @@ return(
           onChange={event => setLocation(event.target.value)}
           onKeyPress={searchLocation}
           placeholder='Enter Location'
-          type="text" />
-      </div>
+          type="text" />      </div>
       <div className="container">
         <div className="top">
           <div className="location">
