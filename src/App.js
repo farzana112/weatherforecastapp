@@ -35,7 +35,9 @@ return(
           <div className="location">
             <p>{data.length > 0 ? data.timezone : ""} </p>
             {/* <p>{data.name}</p> */}
-            <p>{data.name}, {data.sys.country}</p>
+            {/* <p>{data.name}, {data.sys.country}</p> */}
+            <p>{data?.name}, {data?.sys?.country}</p>
+
           </div>
           <div className="temp">
            {/* <h1>65°F</h1>  */}
