@@ -11,11 +11,13 @@ const url=`https://api.openweathermap.org/data/2.5/weather?q= ${location} &appid
       const response = axios.get(url).then((response) => {
         setData(response.data);
         console.log(response.data);
-        // response.data.forEach((location, index) => {
-        //   const name = location.name;
-        //   console.log(`Location ${index + 1}: ${name}`);
-        // });
+        
     
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+        // Handle the error here, e.g., set an error message in state
+        // setError("An error occurred while fetching data.");
       });
       setLocation('')
     }
